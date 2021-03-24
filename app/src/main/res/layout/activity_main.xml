@@ -4,15 +4,167 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/draw1"
     tools:context=".MainActivity">
 
-    <TextView
+    <androidx.gridlayout.widget.GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        app:columnCount="4"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="6"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="300dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/input_text"
+            android:backgroundTint="@color/white"
+            android:gravity="right"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:text=""
+            android:textSize="50sp"
+            app:layout_columnSpan="4"
+            app:layout_columnWeight="4"
+            app:layout_gravity="fill" />
+
+
+        <Button
+            android:id="@+id/button_Cancel"
+            style="@style/calc_button"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/orange"
+            android:text="@string/cancel"
+            app:layout_column="3"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/calc_button"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/_7" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/calc_button"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/_8" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/calc_button"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/_9" />
+
+        <Button
+            android:id="@+id/button_division"
+            style="@style/calc_button"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/purple_200"
+            android:text="@string/division" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/calc_button"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/_4" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/calc_button"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/_5" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/calc_button"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/_6" />
+
+        <Button
+            android:id="@+id/button_multiplication"
+            style="@style/calc_button"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/purple_200"
+            android:text="@string/multiplication" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/calc_button"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/_1" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/calc_button"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/_2" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/calc_button"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/_3" />
+
+        <Button
+            android:id="@+id/button_subtraction"
+            style="@style/calc_button"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/purple_200"
+            android:text="@string/subtraction" />
+
+        <Button
+            android:id="@+id/button_point"
+            style="@style/calc_button"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/point" />
+
+        <Button
+            android:id="@+id/button_zero"
+            style="@style/calc_button"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/zero" />
+
+        <Button
+            android:id="@+id/button_equality"
+            style="@style/calc_button"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/equality" />
+
+        <Button
+            android:id="@+id/button_addition"
+            style="@style/calc_button"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/purple_200"
+            android:text="@string/addition" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
