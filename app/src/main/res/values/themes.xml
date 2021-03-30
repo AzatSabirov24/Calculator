@@ -14,11 +14,32 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="calc_button">
+    <style name="text_view" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:background">@drawable/input_text</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:gravity">right</item>
+        <item name="android:text">""</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:layout_marginStart">@dimen/margin_text_view_and_buttons</item>
+        <item name="android:layout_marginEnd">@dimen/margin_text_view_and_buttons</item>
+        <item name="android:paddingLeft">@dimen/padding_text_view</item>
+        <item name="android:paddingRight">@dimen/padding_text_view</item>
+        <item name="android:paddingTop">@dimen/padding_text_view</item>
+        <item name="android:paddingBottom">@dimen/padding_text_view</item>
+    </style>
+
+    <style name="calc_button" parent="Theme.MaterialComponents.DayNight">
         <item name="android:layout_width">70dp</item>
         <item name="android:layout_height">70dp</item>
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginStart">@dimen/margin_text_view_and_buttons</item>
+    </style>
+
+    <style name="calc_button1" parent="calc_button">
+        <item name="android:layout_marginEnd">@dimen/margin_text_view_and_buttons</item>
     </style>
 
     <style name="calc_button_horizontal">
